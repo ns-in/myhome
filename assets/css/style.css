@@ -5123,14 +5123,13 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
 ----------------------------------------------------- */
 .tp-tabs {
   border: 0 !important;
-  margin: 50px 0 0 0; }
+  margin:  0 0 0 0; }
   .tp-tabs li {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px !important; }
+    display: inline-block;
+    width: auto; margin:5px!important; }
     .tp-tabs li a {
-      color: #071C55;
-      background: #F8F8F8;
+      color: #fff;
+      background: #f3941e;
       border-radius: 4px;
       border: 0 !important;
       position: relative; }
@@ -5154,7 +5153,7 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
         background-color: #071C55 !important;
         color: #ffffff !important; }
         .tp-tabs li a.active:after {
-          visibility: visible; }
+          visibility: hidden; }
     .tp-tabs li:last-child {
       margin-bottom: 0 !important; }
   .tp-tabs.style-two {
@@ -5189,10 +5188,10 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
   background-repeat: no-repeat;
   background-position: center;
   padding: 50px 80px 100px 30px; }
-  .faq-tab-content .faq-details {
+  .faq-tab-content .faq-details {/*
     background: rgba(7, 28, 85, 0.9);
     border-radius: 10px;
-    padding: 18px 30px 25px; }
+    padding: 18px 30px 25px;*/ }
     .faq-tab-content .faq-details h6 {
       color: var(--main-color-one);
       font-size: 16px;
@@ -5201,7 +5200,28 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
       padding-top: 10px;
       line-height: 26px; }
     .faq-tab-content .faq-details p {
-      color: #ffffff; }
+      color: #2b2b2b; }
+
+    .faq-tab-content .faq-details p span {background-color: #fff; box-shadow: 0 3px 1px rgb(236, 155, 54); 
+    padding:7px 15px; display:inline-block; margin-bottom: 20px; border-radius: 10px;}
+
+ .faq-tab-content .faq-details p span b {color:#f3941e;}
+
+          .faq-tab-content .faq-details h3 {
+      color: var(--heading-color);
+      text-transform: uppercase; margin: 20px 0 30px 0; font-weight: bold }
+
+.faq-tab-content .faq-details .ovrview   {list-style: none; margin:0; padding: 0}
+.faq-tab-content .faq-details .ovrview  li {list-style: none; margin-bottom: 15px;
+ font-size: 15px; color:#2b2b2b;background-color: #fff; padding:5px 10px; border-radius: 10px;
+display: inline-block; margin-right: 20px; font-size: 16px}
+
+ .faq-tab-content .faq-details .ovrview li  span { color: #f3941e; }
+
+ .faq-tab-content .faq-details .ovrview li span i {background-color: #f3941e; color:#fff;
+  width:30px; height: 30px; text-align: center; line-height: 30px; border-radius: 10px;
+font-size: 16px}
+
 
 /* -----------------------------------------------------
     user profile style
@@ -5610,8 +5630,8 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
 ----------------------------------------------------- */
 .sidebar-area .widget {
   background: #F8F8F8;
-  padding: 30px 0 26px 0;
-  margin-bottom: 60px;
+  padding: 30px 0 10px 0;
+  margin-bottom: 40px;
   border-radius: 8px; }
 
 .widget-title {
@@ -5619,7 +5639,7 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
   color: var(--main-color-two);
   font-weight: 500;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: var(--body-font);
   padding-left: 37px; }
   .widget-title:after {
@@ -5706,12 +5726,10 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     border-bottom: 1px solid #E9E9E9;
-    padding: 4px 37px;
-    text-align: right;
+    padding: 10px 37px; 
     overflow: hidden; }
-    .widget_categories ul li a {
-      float: left; }
-    .widget_categories ul li:hover {
+    .widget_categories ul li a {  }
+    .widget_categories ul li a:hover {
       color: var(--main-color-one); }
     .widget_categories ul li:last-child {
       border-bottom: 0; }
@@ -6103,7 +6121,7 @@ filter: brightness(60%);  cursor: url('http://www.astrosadhna.com/trek/assets/im
 
 .footer-area {
   position: relative;
-  padding-top: 120px;
+  padding-top: 80px;
   background-repeat: no-repeat;
   background-size: cover; }
   .footer-area:after {
@@ -6317,5 +6335,32 @@ max-height: 250px;z-index: 2; right:-50px;}
 .fx-area .txt h3{font-size: 30px; margin-bottom: 40px}
 .fx-area .txt h3 span{font-size: 45px; text-transform: uppercase; color:#fff;
 font-weight: bold}
+
+
+
+.outer { margin:0 auto; max-width:800px;}
+#big .item { background: #ec6e46; padding: 120px 0px; margin:2px; color: #FFF; border-radius: 3px; text-align: center; }
+#thumbs .item { background: #C9C9C9; height:70px; line-height:70px; padding: 0px; margin:2px; color: #FFF; border-radius: 3px; text-align: center; cursor: pointer; }
+#thumbs .item h1 { font-size: 18px; }
+#thumbs .current .item { background:#FF5722; }
+.owl-theme .owl-nav [class*='owl-'] { -webkit-transition: all .3s ease; transition: all .3s ease; }
+.owl-theme .owl-nav [class*='owl-'].disabled:hover { background-color: #D6D6D6; }
+#big.owl-theme { position: relative; }
+#big.owl-theme .owl-next, #big.owl-theme .owl-prev { background:#333; width: 22px; line-height:40px; height: 40px; margin-top: -20px; position: absolute; text-align:center; top: 50%; }
+#big.owl-theme .owl-prev { left: 10px; }
+#big.owl-theme .owl-next { right: 10px; }
+#thumbs.owl-theme .owl-next, #thumbs.owl-theme .owl-prev { background:#333; }
+
+
+
+.gallery-thumbs img {border-radius: 10px; margin-top: 20px; opacity: 0.7; border:2px solid #fff;
+transition: all 0.15s ease-in; cursor: pointer;}
+
+.gallery-thumbs .swiper-slide-thumb-active img {opacity: 1; border:2px solid  #f3941e;
+  transform: translateY(-5px); transition: all 0.15s ease-in}
+
+.gallery-top img {border-radius: 20px; filter:brightness(30%);}
+
+.gallery-top .swiper-slide-active img{ filter:brightness(100%);}
 
 
